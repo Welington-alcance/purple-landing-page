@@ -23,6 +23,11 @@ body{
 .logo{
     font-weight: 900;
     font-size: 20px;
+    transition: 0.5s;
+}
+.logo:hover{
+    color: rgb(132, 14, 201);
+    cursor: pointer;
 }
 
 .navigaton{
@@ -35,6 +40,10 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.4s;
+}
+.navigaton-manu:hover{
+    color: rgb(132, 14, 201);
 }
 
 .btn-header{
@@ -45,6 +54,12 @@ body{
     background-color:  rgb(34, 34, 34);
     color: #fff;
     border: 1px solid rgb(132, 14, 201);
+    transition: 0.8s;
+}
+.btn-header:hover{
+    background-color: #fff;
+    color: rgb(132, 14, 201);
+    cursor: pointer;
 }
 
 .main{
@@ -52,6 +67,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     flex: 1;
+    margin-bottom: 40px;
 }
 
 .main-primary{
@@ -94,4 +110,24 @@ body{
     background-color: rgb(132, 14, 201);
     color: #fff;
     font-weight: 600;
+    transition: 0.6s;
+}
+
+.btn-form:hover{
+    background-color: rgba(132, 14, 201, 0.6);
+    cursor: pointer;
+}
+
+.img-principal{
+    animation: img-pulsa 1s infinite alternate;
+
+}
+
+@keyframes img-pulsar {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
 }
